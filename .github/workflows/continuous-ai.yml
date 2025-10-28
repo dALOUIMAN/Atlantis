@@ -1,0 +1,45 @@
+name: Continuous AI Workflow
+
+# This workflow runs automatically on push and pull requests
+# Workflows are like pipelines - they automate tasks in sequence
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  ai-tasks:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Welcome message
+        run: |
+          echo "🎭 Welcome to Atlantis Continuous AI Workflow!"
+          echo "This is an automated pipeline that runs on every code change"
+          
+      - name: Check repository structure
+        run: |
+          echo "📁 Repository structure:"
+          ls -la
+          
+      - name: Validate README
+        run: |
+          if [ -f "README.md" ]; then
+            echo "✅ README.md found"
+            echo "📄 Content preview:"
+            head -10 README.md
+          else
+            echo "❌ README.md not found"
+            exit 1
+          fi
+          
+      - name: AI Pipeline Complete
+        run: |
+          echo "🎉 Continuous AI workflow completed successfully!"
+          echo "This pipeline can be extended with AI tools, tests, and deployments"
