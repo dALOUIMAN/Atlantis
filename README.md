@@ -5,9 +5,9 @@ A adventure and a adventure a journey a dream full of magic
 
 We are currently working on an exciting project - a fairytale city within a virtual world. This immersive experience will bring the magic of Atlantis to life in new and wonderful ways.
 
-**Status:** Awaiting approval
+**Status:** Application being submitted to Viverse
 
-We will keep you posted on our progress as we develop this enchanting virtual realm.
+We are actively seeking help and support for this project. The application is being handed over to Viverse, and we will keep you posted on our progress as we develop this enchanting virtual realm.
 
 ---
 *Greetings from Louis and the team*
